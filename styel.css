@@ -1,0 +1,209 @@
+:root {
+    --main-color: #f8b281;
+    --secandary-color: #1b1b1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "argonite";
+    src: url(./assets/stone\ orgonite.woff);
+}
+
+section {
+    padding: 5%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "argonite", sans-serif;
+    transform: translateX(100%);
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--secandary-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 1rem;
+    font-family: "argonite", sans-serif;
+}
+
+.logo img {
+    width: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav svg {
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.front-page {
+    min-height: 100vh;
+    color: white;
+    background-image: url(assets/hero.png);
+    background-size: cover;
+    /* background-color: #57776c; */
+}
+
+.selling-point {
+    margin-top: 25vh;
+    font-family: "argonite", sans-serif;
+    text-shadow: 0px 4px 24px #0000007a;
+    text-align: center;
+}
+
+.selling-point h3 {
+    font-family: sans-serif;
+    text-shadow: 0px 4px 24px #0000007a;
+}
+
+.ctas {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ctas button {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 12px #0000007a;
+    margin: 1rem;
+
+}
+
+.cta-main {
+    background-color: var(--main-color);
+    color: var(--secandary-color);
+
+}
+
+.cta-sec {
+    background-color: var(--secandary-color);
+    color: white;
+
+}
+
+.classes {
+    color: var(--secandary-color);
+    text-align: center;
+    font-family: "argonite", sans-serif;
+}
+
+.videos video {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    /* position: relative; */
+}
+
+.pilates,
+.meditation,
+.yoga {
+    position: relative;
+}
+
+.videos h3 {
+    position: absolute;
+    color: var(--main-color);
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.about {
+    color: var(--secandary-color);
+
+}
+
+.about h2 {
+    font-family: "argonite", sans-serif;
+}
+
+.about p {
+    line-height: 125%;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.about img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .videos {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    .videos video {
+        width: 80%;
+
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    .about img {
+        width: 50%;
+
+    }
+}
